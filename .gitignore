@@ -19,3 +19,4 @@ config.codekit
 
 # Private files
 private.js
+db.php
