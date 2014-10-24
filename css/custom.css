@@ -1,0 +1,322 @@
+/*
+   Custom styles by Kacey Coughlin
+   ----------------------------------------------------- */
+   
+   /* Index styles 
+   ----------------------------------------------------- */
+   .cube {
+		margin: 0 auto;
+		margin-bottom: 10%; /* separate cube and footer */
+	}
+	.slice {
+		
+	}
+	.sliver {
+		font-family: Arial, Helvetica, sans-serif;
+		opacity: 0.7;
+   	   filter: alpha(opacity=70);
+   	   overflow: hidden;
+	   position: relative;
+	}
+	.empty {
+		background: none;
+		position: relative;
+	}
+	.shade-down {
+		background: none;
+		height: 0;
+		opacity: 0.6;
+   	    filter: alpha(opacity=60);
+		width: 0;
+	}
+	.shade-up {
+		background: none;
+		height: 0;
+		opacity: 0.6;
+   	    filter: alpha(opacity=60);
+		width: 0;
+	}
+   .hiddenText {
+	   padding:0;
+	   opacity: 0;
+   	   filter: alpha(opacity=0);
+   	   -webkit-transition:all 1.0s ease-in-out;
+	   -moz-transition:all 1.0s ease-in-out;
+	   -o-transition:all 1.0s ease-in-out;
+	   transition:all 1.0s ease-in-out;
+   }
+   .sliver > span {
+	   color: rgba(255,255,255,1.0);
+   }
+   .sliver img {
+   	   opacity: 0;
+   	   filter: alpha(opacity=0);
+   	   position: absolute;
+	   vertical-align: top !important;
+	   z-index: 1;
+	   -webkit-transition:all 1.0s ease-in-out;
+	   -moz-transition:all 1.0s ease-in-out;
+	   -o-transition:all 1.0s ease-in-out;
+	   transition:all 1.0s ease-in-out;
+   }
+   .sliver:hover {
+	   cursor: pointer;
+   }
+   .sliver:hover img {
+	   opacity: 0.5;
+	   filter: alpha(opacity=50);
+   }
+   .sliver:hover .hiddenText {
+	   opacity: 1.0;
+   	   filter: alpha(opacity=100);
+   }
+    #index .example img {
+	   height: 300px;
+   }
+   #index .summary {
+	   text-align: center;
+   }
+   .popup-top, .popup-bottom {
+   		color: rgba(255,255,255,1.0);
+   		opacity: 0.7;
+   	   filter: alpha(opacity=70);
+   	   font-weight: lighter;
+	   margin: 0;
+	   overflow: hidden;
+	   padding: 0;
+	   position: absolute;
+	   -webkit-transition: all 1s ease;
+	   transition: all 1s ease;
+	   -moz-transition: all 1s ease;
+	   -o-transition: all 1s ease;
+   }
+   .popup-top { top: 100px; }
+   body:hover .popup-top { top: 0; }
+   .popup-bottom { top: 0; left: 0; margin-top: -100px; }
+   body:hover .popup-bottom { margin-top: 0;}
+   /* Everything else
+   ----------------------------------------------------- */
+   /* LAYOUT */
+   body {
+	   background: url('//www.kaceycoughlin.com/img/galaxy.png') top left no-repeat scroll #070C22;
+   }
+   .container {
+   	   height: 100%;
+   	   margin:0 auto;
+	   width: 100%;
+   }
+   .floater {
+	   height: inherit;
+	   position: fixed;
+	   width: inherit;
+	   z-index: 10;
+   }
+   /* NAV */
+   .navbar {
+   		background: rgba(255,255,255,0.3);
+   		border: none;
+   		font: 14pt/1 Arial, Helvetica, sans-serif;
+   		min-height: 30px;
+   }
+   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+	   color: rgba(255,255,255,1.0);
+	   font: 14pt/1 Arial, Helvetica, sans-serif;
+	   line-height: 10px;
+	   opacity: 0.7;
+   	   filter: alpha(opacity=70);
+   }
+   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	   background-color: none !important;
+	   background: none !important;
+	   border-bottom: 4px solid rgba(255,255,255,0.8);
+   }
+   .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+	   background-color: none !important;
+	   background: none !important;
+   }
+   .navbar-default .navbar-nav > a:hover, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover {
+	   color: #fff;
+	   text-shadow: none;
+   }
+   .navbar-default .navbar-brand {
+	   color: #fff;
+	   text-shadow: -1px -1px white;
+   }
+   .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	   color: #E566FF;
+   }
+   /* BREADCRUMBS */
+   .breadcrumb {
+   	   background: none !important;
+	   background-color: none;
+	   color: rgba(255,85,187,0.7);
+   }
+   .breadcrumb a, .breadcrumb li, .breadcrumb .active {
+	   color: rgba(255,255,255,0.7);
+   }
+   /* CONTENT */
+   .banner {
+	   height: 400px;
+	   margin: 0 auto;
+	   margin-top: 53px;
+	   overflow: hidden;
+	   position: relative;
+	   text-align: center;
+	   width: inherit;
+   }
+   .banner h1 {
+   	   color: rgba(255,255,255,1.0);
+   	   font-size: 40pt;
+   	   text-shadow: -1px -1px #fff, 1px 1px #333;
+   	   margin: 300px 0 0 0;
+   	   padding: 5px 10px 10px 100px;
+	   position: absolute;
+	   z-index: 5;
+   }
+   .middle {
+	   color: #fff;
+	   font: 2vmax/1.5 Arial, Helvetica, sans-serif;
+   }
+   .middle, footer {
+	   padding: 0 4vw 0 4vw;
+   }
+   .example, .example img {
+	   overflow: hidden;
+   }
+   .static .breadcrumb {
+	   margin-top: 75px;
+   }
+   .static .featurette {
+	   background: rgba(250,241,213,0.8);
+	   color: #2d7bc4;
+	   padding: 10px;
+   }
+   .static .featurette .lead a {
+	   color: #399df9;
+	   font-weight: bold;
+   }
+   .featurette .title {
+	   color: #fff;
+	   text-decoration: none;
+   }
+   .featurette .title:hover, .featurette .title:focus {
+   		color: #268ECC;
+	   text-decoration: none;
+   }
+	@media (min-width: 985px) and (max-width: 1200px) {
+		body .featurette .others {
+			margin-left: 15px;
+			padding: 0;
+		}
+	}
+	@media (max-width: 984px) {
+		body .featurette .others {
+			display: block;
+			width: 100%;
+		}
+	}
+   .featurette .others > a > img {
+	   float: left;
+	   padding: 10px 10px 10px 0;
+   }
+   .featurette .others img, .featurette .before img {
+	   opacity: 0.7;
+	   filter: alpha(opacity=70);
+   }
+   .featurette .others > a:hover, .featurette .others > a:focus, .featurette .others > a > img:hover, .featurette .others > a > img:focus, .featurette .before > a > img:hover, .featurette .before > a > img:focus {
+	   opacity: 1.0;
+	   filter: alpha(opacity=100);
+   }
+   /* FOOTER */
+   footer, footer a {
+	   color: rgba(255,255,255,0.3);
+   }
+	footer, footer h2 {
+		line-height: 30px;
+		padding: 3vh 0 3vh 0;
+	}
+	footer h3 {
+		text-align: center;
+	}
+	footer a:hover, .websymbols a:hover {
+		color: rgba(255,255,255,0.7);
+		text-decoration: none;
+	}
+	footer ul li {
+		line-height: 1.25;
+		min-height: 20px;
+		padding: 3px 5px 6px 10px;
+	}
+	/* Socials */
+	#googleplus li:hover {
+		background: rgba(255,255,255,0.3);
+		color: #fff;
+	}
+	.twitter {
+		overflow: hidden;
+	}
+	.twitter iframe {
+		margin-top: -50px;
+	}
+	#instagram li {
+		float: left;
+	}
+	#instagram img {
+		height: 120px;
+		opacity: 0.5;
+		padding: 0 10px 10px 0;
+		width: 120px;
+	}
+	#instagram img:hover {
+		opacity: 1.0;
+	}
+	.static .example img {
+		margin-top: 100px;
+		list-style: none;
+	}
+	.static .middle {
+		margin-bottom: 10%;
+	}
+	.site_map .middle h2 a {
+		color: #fff;
+	}
+	.websymbols a, .websymbols a:hover { text-decoration: none; }
+   /* PAGE THEMES */
+   .line { display: inline; }
+   .about {background: #EE6FAA; color: #EE6FAA;text-shadow: -1px -1px #fff, 1px 1px #333;}
+   .design, li.about, h1.about {background: #3DF9D9;color: #3DF9D9;text-shadow: -1px -1px #fff, 1px 1px #333;}
+   .print, li.web, h1.web {background: #E566FF;color:#E566FF;text-shadow: -1px -1px #fff, 1px 1px #333;}
+   .web, li.misc, h1.misc {background: #F9F0D4; color:#F9F0D4;text-shadow: -1px -1px #fff, 1px 1px #333;}
+   .misc, li.archive, h1.archive {background: #F9F92B;color:#F9F92B;text-shadow: -1px -1px #fff, 1px 1px #333;}
+
+   /* MODAL */
+	.middle .modal-dialog {
+		color: #333;
+		width: 80%;
+	}
+	
+	/* Font styles
+   ----------------------------------------------------- */
+   	.largeFont {font-size: 4em;}
+	.websymbols {font-family: 'WebSymbolsLigaRegular', Arial, sans-serif;letter-spacing:5px;}
+	.fontawesome {font-family: 'FontAwesome', Arial, sans-serif;letter-spacing: 0;}
+	.tight {margin: 0; padding: 0;}
+	
+	/* Font imports
+   ----------------------------------------------------- */
+   	@font-face{
+	   font-family: 'FontAwesome';
+	   src: url('../fonts/font-awesome/fontawesome-webfont.eot');
+	   src: url('../fonts/font-awesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+	   		url('../fonts/font-awesome/fontawesome-webfont.woff') format('woff'),
+	   		url('../fonts/font-awesome/fontawesome-webfont.ttf') format('truetype'),
+	   		url('../fonts/font-awesome/fontawesome-webfont.svg#FontAwesome') format('svg');
+   	}
+	@font-face{ 
+	font-family: 'WebSymbolsLigaRegular';
+		src: url('../fonts/WebSymbolsLiga-Regular/websymbolsligaregular.eot');
+		src: url('../fonts/WebSymbolsLiga-Regular/websymbolsligaregular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/WebSymbolsLiga-Regular/websymbolsligaregular.woff') format('woff'),
+			url('../fonts/WebSymbolsLiga-Regular/websymbolsligaregular.ttf') format('truetype'),
+			url('../fonts/WebSymbolsLiga-Regular/websymbolsligaregular.svg#WebSymbolsRegular') format('svg');
+	}

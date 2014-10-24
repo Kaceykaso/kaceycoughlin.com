@@ -1,0 +1,388 @@
+/*
+   Custom styles by Kacey Coughlin
+   Specifically for Index cube design
+   ----------------------------------------------------- */
+@media (max-width: 320px) {
+	.cube {
+		display: block !important;
+		margin-top: 15px;
+		height: 285px;
+		width: 285px;
+	}
+	.slice {
+		display: inline;
+		height: 95px;
+		width: 285px;
+	}
+	.sliver {
+		display: inline;
+		font-size: 1.8em;
+		height: 95px;
+		line-height: 142px;
+		width: 95px;
+	}
+	.sliver > span {
+		margin-left: 10px;
+	}
+	.shade-down {
+		display: inline;
+		border-bottom: 95px solid #000;
+		border-right: 95px solid transparent;
+	}
+	.shade-up {
+		display: inline;
+		border-top: 95px solid #000;
+		border-left: 95px solid transparent;
+	}
+	.popup .top {
+		margin-bottom: -10px;
+	}
+	.featurette .example img, .featurette .others > a > img, .featurette-heading, .featurette .lead {
+		display: block;
+	}
+	#index .featurette .example img {
+		display: none;
+	}
+	#index .middle > .row {
+		display: block;
+		margin-top: 30px !important;
+	}
+	.middle .summary {
+		margin-bottom: 15px;
+	}
+	.middle .summary p {
+		font-size: 14pt;
+	}
+}   
+@media (min-width: 320px) and (max-width: 400px) {
+	.cube {
+		display: block !important;
+		margin-top: 20px;
+		height: 315px;
+		width: 315px;
+	}
+	.slice {
+		display: inline;
+		height: 105px;
+		width: 315px;
+	}
+	.sliver {
+		display: inline;
+		font-size: 2em;
+		height: 105px;
+		line-height: 157px;
+		width: 105px;
+	}
+	.sliver > span {
+		margin-left: 10px;
+	}
+	.shade-down {
+		display: inline;
+		border-bottom: 105px solid #000;
+		border-right: 105px solid transparent;
+	}
+	.shade-up {
+		display: inline;
+		border-top: 105px solid #000;
+		border-left: 105px solid transparent;
+	}
+	.popup-top {
+		font-size: 13.5pt;
+		line-height: 200px;
+		right: -2px;
+	}
+	.popup-bottom {
+		font-size: 13.5pt;
+		top: -71px;
+		left: -11px;
+	}
+	.featurette .example img, .featurette .others > a > img, .featurette-heading, .featurette .lead {
+		display: block;
+		float: left;
+	}
+	#index .featurette .example img {
+		display: none;
+	}
+	#index .middle > .row {
+		display: block;
+		margin-top: 30px !important;
+	}
+	.middle .summary {
+		margin-bottom: 15px;
+	}
+	.middle .summary p {
+		font-size: 14pt;
+	}
+}
+@media (min-width: 400px) and (max-width: 770px) {
+	.cube {
+		display: block;
+		margin-top: 20px;
+		margin-bottom: 50px;
+		height: 450px;
+		width: 450px;
+	}
+	.slice {
+		display: inline;
+		height: 150px;
+		width: 450px;
+	}
+	.sliver {
+		display: inline;
+		font-size: 3em;
+		height: 150px;
+		line-height: 225px;
+		width: 150px;
+	}
+	.sliver > span {
+		margin-left: 20px;
+	}
+	.shade-down {
+		display: inline;
+		border-bottom: 150px solid #000;
+		border-right: 150px solid transparent;
+	}
+	.shade-up {
+		display: inline;
+		border-top: 150px solid #000;
+		border-left: 150px solid transparent;
+	}
+	.popup-top {
+		font-size: 18.5pt;
+		line-height: 285px;
+	}
+	.popup-bottom {
+		font-size: 18.5pt;
+		top: -103px;
+		left: -21px;
+	}
+	.featurette .example img, .featurette .others > a > img, .featurette-heading, .featurette .lead {
+		display: block;
+	}
+	#index .middle > .row {
+		display: block;
+		margin-top: 50px !important;
+	}
+	.middle .summary {
+		margin-bottom: 20px;
+	}
+	.middle .summary p {
+		font-size: 14pt;
+	}
+}
+@media (min-width: 770px) and (max-width: 991px) {
+	.cube {
+		display: block;
+		margin-top: 30px;
+		height: 600px;
+		width: 600px;
+	}
+	.slice {
+		display: inline;
+		height: 200px;
+		width: 600px;
+	}
+	.sliver {
+		display: inline;
+		font-size: 3em;
+		height: 200px;
+		line-height: 300px;
+		width: 200px;
+	}
+	.sliver > span {
+		margin-left: 20px;
+	}
+	.shade-down {
+		display: inline;
+		border-bottom: 200px solid #000;
+		border-right: 200px solid transparent;
+	}
+	.shade-up {
+		display: inline;
+		border-top: 200px solid #000;
+		border-left: 200px solid transparent;
+	}
+	.popup-top {
+		font-size: 26pt;
+		line-height: 375px;
+	}
+	.popup-bottom {
+		font-size: 26pt;
+		top: -137px;
+		left: -23px;
+	}
+	.featurette .example img, .featurette .others > a > img {
+		display: inline;
+	}
+	#index .middle {
+		margin-top: 100px;
+	}
+	.featurette .summary > p {
+		font-size: 12pt;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1290px) {
+	.cube {
+		display: block;
+		margin-top: 30px;
+		height: 600px;
+		width: 600px;
+	}
+	.slice {
+		display: inline;
+		height: 200px;
+		width: 600px;
+	}
+	.sliver {
+		display: inline;
+		font-size: 3em;
+		height: 200px;
+		line-height: 300px;
+		width: 200px;
+	}
+	.sliver > span {
+		margin-left: 20px;
+	}
+	.shade-down {
+		display: inline;
+		border-bottom: 200px solid #000;
+		border-right: 200px solid transparent;
+	}
+	.shade-up {
+		display: inline;
+		border-top: 200px solid #000;
+		border-left: 200px solid transparent;
+	}
+	.popup-top {
+		font-size: 26pt;
+		line-height: 375px;
+	}
+	.popup-bottom {
+		font-size: 26pt;
+		top: -137px;
+		left: -23px;
+	}
+	.featurette .example img, .featurette .others > a > img {
+		display: inline;
+	}
+	.featurette dt, .featurette dd {
+		font-size: 16pt;
+	}
+	#index .middle {
+		margin-top: 100px;
+	}
+	.middle .summary > p {
+		font-size: 12pt;
+	}
+}
+
+@media (min-width: 1290px) and (max-width: 1930px) {
+	.cube {
+		display: block;
+		margin-top: 30px;
+		height: 600px;
+		width: 600px;
+	}
+	.slice {
+		display: inline;
+		height: 200px;
+		width: 600px;
+	}
+	.sliver {
+		display: inline;
+		font-size: 3em;
+		height: 200px;
+		line-height: 300px;
+		width: 200px;
+	}
+	.sliver > span {
+		margin-left: 20px;
+	}
+	.shade-down {
+		display: inline;
+		border-bottom: 200px solid #000;
+		border-right: 200px solid transparent;
+	}
+	.shade-up {
+		display: inline;
+		border-top: 200px solid #000;
+		border-left: 200px solid transparent;
+	}
+	.popup-top {
+		font-size: 26pt;
+		line-height: 375px;
+	}
+	.popup-bottom {
+		font-size: 26pt;
+		top: -137px;
+		left: -23px;
+	}
+	.featurette .example img, .featurette .others > a > img {
+		display: inline;
+	}
+	.featurette dt, .featurette dd {
+		font-size: 16pt;
+	}
+	#index .middle {
+		margin-top: 100px;
+	}
+	.middle .summary p {
+		font-size: 16pt;
+	}
+}
+@media (min-width: 1930px) {
+	.cube {
+		display: block;
+		margin-top: 30px;
+		height: 600px;
+		width: 600px;
+	}
+	.slice {
+		display: inline;
+		height: 200px;
+		width: 600px;
+	}
+	.sliver {
+		display: inline;
+		font-size: 3em;
+		height: 200px;
+		line-height: 300px;
+		width: 200px;
+	}
+	.sliver > span {
+		margin-left: 20px;
+	}
+	.shade-down {
+		display: inline;
+		border-bottom: 200px solid #000;
+		border-right: 200px solid transparent;
+	}
+	.shade-up {
+		display: inline;
+		border-top: 200px solid #000;
+		border-left: 200px solid transparent;
+	}
+	.popup-top {
+		font-size: 26pt;
+		line-height: 375px;
+	}
+	.popup-bottom {
+		font-size: 26pt;
+		top: -137px;
+		left: -23px;
+	}
+	.featurette .example img, .featurette .others > a > img {
+		display: inline;
+	}
+	.featurette dt, .featurette dd {
+		font-size: 16pt;
+	}
+	#index .middle {
+		margin-top: 100px;
+	}
+	.middle .summary p {
+		font-size: 16pt;
+	}
+}
+

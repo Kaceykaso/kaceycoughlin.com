@@ -1,0 +1,10 @@
+Sitemap: http://www.kaceycoughlin.com/sitemap.xml
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /test/
+Disallow: /MMI/
+Disallow: /CCPR/
+Disallow: /DQ/
+Disallow: /Desk/
